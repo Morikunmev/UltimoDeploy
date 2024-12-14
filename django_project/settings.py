@@ -42,10 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',
-    'blog',
-    'home',
-    'tasks',
-    'rest_framework'
+    'rest_framework',
+    'home'
 ]
 
 MIDDLEWARE = [
@@ -129,7 +127,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "blog/static"),
+    os.path.join(BASE_DIR, "static"),  # Para los archivos de React
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")

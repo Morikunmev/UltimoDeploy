@@ -1,5 +1,49 @@
-venv
-__pycache__
+# Python/Django
+venv/
+__pycache__/
+*.py[cod]
 db.sqlite3
-staticfiles
+/staticfiles/
 .env
+
+# React/Node
+node_modules/
+/static/frontend/
+npm-debug.log
+.DS_Store
+
+# IDEs/Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos compilados
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Archivos de ambiente local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+*.log
