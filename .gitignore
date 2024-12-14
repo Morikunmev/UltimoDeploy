@@ -3,12 +3,10 @@ venv/
 __pycache__/
 *.py[cod]
 db.sqlite3
-/staticfiles/
 .env
 
 # React/Node
 node_modules/
-/static/frontend/
 npm-debug.log
 .DS_Store
 

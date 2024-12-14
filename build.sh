@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
-# Exit on error
-set -o errexit
 
-# Install python dependencies
-pip install -r requirements.txt
+echo "Building the project..."
+python -m pip install -r requirements.txt
 
-# Install frontend dependencies
+echo "Building frontend..."
 cd frontend
 npm install
 npm run build
 cd ..
 
-# Collect static files
+echo "Collecting static files..."
 python manage.py collectstatic --no-input
+
+echo "Build completed!"

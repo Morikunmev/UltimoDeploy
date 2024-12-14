@@ -1,1 +1,2 @@
-web: python manage.py collectstatic && gunicorn django_project.wsgi
+web: chmod +x build.sh && ./build.sh && gunicorn django_project.wsgi
+
